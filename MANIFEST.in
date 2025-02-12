@@ -1,0 +1,7 @@
+graft termux_api_pydantic
+include pyproject.toml
+include setup.py
+include requirements.txt
+graft extras
+global-exclude *.py[cod]
+global-exclude upload.py
