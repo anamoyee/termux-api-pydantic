@@ -34,7 +34,7 @@ class BatteryStatus(_BM):
 		return self.status != "DISCHARGING"
 
 	def is_plugged(self):
-		return self.status != "UNPLUGGED"
+		return self.plugged != "UNPLUGGED"
 
 	def get_percentage_emoji(
 		self,
