@@ -1,4 +1,4 @@
-from ._base import _BM, _execute
+from ._base import _BM, _execute_json
 
 
 # Not making an enum for the inner values here, since i dont know every value, and the termux api docs are LACKING...
@@ -67,4 +67,4 @@ class BatteryStatus(_BM):
 
 
 def battery_status():
-	return BatteryStatus(**_execute("termux-battery-status"))
+	return BatteryStatus(**_execute_json("termux-battery-status"))
